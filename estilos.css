@@ -1,0 +1,74 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(243, 84, 105);
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1100px; 
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+}
+
+.contenedor > div{
+background-color: rgb(125, 221, 250);
+padding: 20px;
+border-radius: 4px ;
+
+
+}
+
+.contenedor > header {
+ background-color: rgb(71, 243, 229);
+ grid-column-start:1;
+ grid-column-end: 4;
+}
+
+.contenedor.contenido{
+    grid-column: span;
+    background-color: rgb(238, 78, 158);
+}
+
+.contenedo.contenedor{
+    background-color: rgb(228, 79, 203);
+    grid-row: span2;
+}
+
+.contenedor.footer{
+background-color: rgb(124, 72, 228);
+color: rgb(238, 135, 135);
+grid-column: span3;
+}
+
+@media screen and (max-width 768px ) {
+    body{
+        background-color: rgb(241, 88, 183);
+    }
+
+.contenedor.contenido {
+    grid-column: 1/ -1;
+}
+
+.contenedor.sidebar{
+    grid-column: 1/ -1;
+}
+
+.contenedor.widget-1{
+    grid-column: span2;
+}
+color
+
+}
+
+
+    
+
